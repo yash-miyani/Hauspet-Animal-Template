@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hauspet-Animal Shelter Elementor template</title>
+
+    <!-- mobilenavbar js link  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <!-- mobilenavbar js link  -->
+
+    <!-- Aos link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Aos link  -->
+
+    <!-- icoan link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- icoan link  -->
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quarry.css" />
+    <!-- css link  -->
+
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <!-- favicon link  -->
+
+    <!-- slick slider link  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- slick slider link  -->
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <section style="background-color: #fff">
+      <nav class="navbar">
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <a href="index.html"
+          ><img src="img/logo.png" alt="logo" class="w-100"
+        /></a>
+
+        <div class="main-nav">
+          <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="breed.html">BREED</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+
+            <!-- DROPDOWN START  -->
+
+            <li class="dropdown">
+              <a href="#">PAGE <i class="bi bi-chevron-down"></i> </a>
+              <div class="dropdown-content">
+                <a href="about.html">About us</a>
+                <a href="service.html">Service</a>
+              </div>
+            </li>
+
+            <!-- DROPDOWN END  -->
+
+            <li><a href="protfolio.html">PROTFOLIO</a></li>
+            <li><a href="contact.html" class="active">CONTACT US</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-btn">
+          <button class="hero-btn">Sign Up</button>
+        </div>
+      </nav>
+    </section>
+    <!-- navbar section end -->
+
+    <!-- header section start  -->
+    <section class="hero-bgimg">
+      <div class="hero-handing" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Home » Contact Us</p>
+      </div>
+    </section>
+    <!-- header section end  -->
+
+    <!-- contact section start  -->
+    <section class="container">
+      <div class="row" style="gap: 4rem; justify-content: center">
+        <div class="col-lg-3 col-md-3 col-sm-10 col-12" data-aos="fade-up">
+          <div class="contact-box">
+            <i class="bi bi-building-fill"></i>
+            <p>Visit Us:</p>
+            <h3>1093 Marigold Lane, Coral Way, Miami, Florida, 33169</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-10 col-12" data-aos="fade-up">
+          <div class="contact-box">
+            <i class="bi bi-envelope-fill"></i>
+            <p>Email:</p>
+            <h3>demo@demo.com</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-10 col-12" data-aos="fade-up">
+          <div class="contact-box">
+            <i class="bi bi-telephone-fill"></i>
+            <p>Phone:</p>
+            <h3>610-403-403</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding-top: 0" data-aos="fade-up">
+      <div class="contact-header">
+        <h3>CONTACT US</h3>
+        <h2>Do You Have Any Question?</h2>
+      </div>
+      <div
+        class="row"
+        style="justify-content: center; padding-top: 5rem; gap: 2rem"
+      >
+        <div class="col-lg-11">
+          <div class="row" style="justify-content: center; gap: 2rem">
+            <div class="col-lg-7 col-md-7 col-sm-10 col-12" data-aos="fade-up">
+              <img src="img/contact-img.jpg" alt="" class="w-100 contact-img" />
+            </div>
+            <div
+              class="col-lg-4 col-md-4 col-sm-10 col-12"
+              style="align-self: center"
+              data-aos="fade-up"
+            >
+              <form
+                class="contact-form"
+                id="contactForm"
+                name="sign-in"
+                data-netlify="true"
+              >
+                <div>
+                  <label for="name">Full Name:-</label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                  />
+                  <span class="error" id="nameError"></span>
+                </div>
+
+                <div>
+                  <label for="email">Email Id:-</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    class="form-input"
+                  />
+                  <span class="error" id="emailError"></span>
+                </div>
+
+                <div>
+                  <label for="phone">Phone No:-</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    class="form-input"
+                  />
+                  <span class="error" id="phoneError"></span>
+                </div>
+
+                <div>
+                  <label for="website">Website Url:-</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    placeholder="Website"
+                    class="form-input"
+                  />
+                  <span class="error" id="websiteError"></span>
+                </div>
+
+                <div>
+                  <label for="message">Message:-</label>
+                  <textarea
+                    rows="5"
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    class="form-input"
+                  ></textarea>
+                  <span class="error" id="messageError"></span>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="checkbox" name="checkbox" />
+                  <span>I accept the privacy and terms.</span>
+                  <span
+                    class="error"
+                    id="checkboxError"
+                    style="display: block"
+                  ></span>
+                </div>
+                <input type="submit" class="hero-btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="margin: 5rem 1rem" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.179624787469!2d72.75613062930834!3d21.14524872895191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ddd12bcd12b%3A0x2038ff3f44cfd4d5!2sVR%20Mall%20Surat!5e0!3m2!1sen!2sin!4v1685622192066!5m2!1sen!2sin"
+        height="450"
+        style="border: 0; width: 100%"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- contact section start  -->
+
+    <!-- footer section start  -->
+    <footer style="background-color: #f5f5f5">
+      <div class="container">
+        <div class="row" style="gap: 3rem; justify-content: center">
+          <div
+            class="col-lg-3 col-md-3 col-sm-5 col-12 footer-div"
+            data-aos="fade-up"
+          >
+            <h3>About Us</h3>
+            <p>
+              Since 2021,we have been offering travel services of the highest
+              quality,combining our energy and enthusiasm.
+            </p>
+            <h2>Follow Us</h2>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-snapchat"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-rss"></i>
+          </div>
+          <div
+            class="col-lg-1 col-md-1 col-sm-5 col-12 footer-div"
+            data-aos="fade-up"
+          >
+            <h3>Link</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Service</li>
+              <li>Features</li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-3 col-md-3 col-sm-5 col-12 footer-div"
+            data-aos="fade-up"
+          >
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Phone : +1 203-123-0606</li>
+              <li>Email : company@example.com</li>
+              <li>Address : Marigold Lane, Coral Way,</li>
+              <li>Miami, Florida, 33169USA</li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-3 col-md-3 col-sm-5 col-12 footer-div"
+            data-aos="fade-up"
+          >
+            <h3>Sign Up</h3>
+            <small
+              >Keep me up to date with content, updates, and offers from</small
+            >
+            <div style="position: relative">
+              <input type="email" name="email" placeholder="Email Address.." />
+              <input type="submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 1rem" class="sub-footer">
+        <h3 style="color: #e44652">
+          Copyright © 2021 Hauspet. All Rights Reserved.
+        </h3>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- js link  -->
+    <script src="js/main.js"></script>
+    <!-- js link  -->
+
+    <!-- Aos js link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+    <!-- Aos js link  -->
+
+    <!-- jquery link  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery link  -->
+  </body>
+</html>
